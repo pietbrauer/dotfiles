@@ -5,7 +5,7 @@ execute pathogen#infect()
 filetype plugin indent on
 
 set noswapfile
-map <leader>n :NERDTreeToggle<CR>
+map <c-n> :NERDTreeToggle<CR>
 
 set mouse=a
 
@@ -14,11 +14,6 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
-
-" Rspec.vim mappings
-map <c-t> :call RunCurrentSpecFile()<CR>
-map <c-s> :call RunNearestSpec()<CR>
-map <c-a> :call RunAllSpecs()<CR>
 
 set nu "show line number
 set tabstop=2
