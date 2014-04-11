@@ -4,6 +4,7 @@ dotfiles
 Use at your own risk!
 
 ```
+ln -s ~/Documents/dotfiles/ ~/.dotfiles
 ln -nfs ~/Documents/dotfiles/bash_profile ~/.bash_profile
 ln -nfs ~/Documents/dotfiles/bashrc ~/.bashrc
 ln -nfs ~/Documents/dotfiles/gemrc ~/.gemrc
