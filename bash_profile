@@ -19,11 +19,17 @@ function parse_ruby_version {
   echo $RUBY_VERSION | sed -e "s/^ruby\-//"
 }
 
+xcode() {
+  open -a /Applications/Xcode.app $1
+}
+alias xcode=xcode
+
 PS1='\[\033[01;34m\]\w\[\033[0;31m\]$(parse_git_branch)\[\e[0m\]$ '
 
 export PATH=/usr/local/bin:/usr/local/sbin:/opt/X11/include:$PATH
 
-export IOS_SDK_VERSION=7.0.3
+export IOS_SDK_VERSION=7.1
+export OS=7.1
 
 alias diff='diff -Nuarbw'
 
