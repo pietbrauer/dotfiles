@@ -4,6 +4,9 @@ execute pathogen#infect()
 
 filetype plugin indent on
 
+" Enables markdown highlighting with .md extension
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
 set noswapfile
 map <c-n> :NERDTreeToggle<CR>
 
