@@ -20,7 +20,7 @@ function parse_ruby_version {
 }
 
 xcode() {
-  open -a /Applications/Xcode.app $1
+ open -a /Applications/Xcode.app $1
 }
 alias xcode=xcode
 
@@ -45,3 +45,4 @@ alias ..='cd ..'
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
+function gi() { curl http://www.gitignore.io/api/$@ ;}
