@@ -2,3 +2,4 @@
 .DS_Store
 *.swp
 xcodebuild_error.log
+.idea/
