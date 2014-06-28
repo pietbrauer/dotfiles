@@ -6,6 +6,7 @@ filetype plugin indent on
 
 " Enables markdown highlighting with .md extension
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd BufNewFile,BufReadPost *.podspec set filetype=ruby
 
 set noswapfile
 map <c-n> :NERDTreeToggle<CR>
