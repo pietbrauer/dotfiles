@@ -24,6 +24,15 @@ xcode() {
 }
 alias xcode=xcode
 
+appcode() {
+  open -a /Applications/AppCode\ EAP.app $1
+}
+
+deckset() {
+  open -a /Applications/Deckset\ private\ beta.app $1
+}
+alias deckset=deckset
+
 PS1='\[\033[01;34m\]\w\[\033[0;31m\]$(parse_git_branch)\[\e[0m\]$ '
 
 export GOPATH=$HOME/Documents/Projekte/go
