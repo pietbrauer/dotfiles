@@ -40,8 +40,8 @@ export GOPATH=$HOME/Documents/Projekte/go
 export PATH=/usr/local/bin:/usr/local/sbin:/opt/X11/include:$GOPATH/bin:$PATH
 
 export DEVICE_TYPE="iPhone-5s"
-export IOS_SDK_VERSION="8.0"
-export OS="8.0"
+export IOS_SDK_VERSION="8.1"
+export OS="8.1"
 
 alias diff='diff -Nuarbw'
 
