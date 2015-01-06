@@ -25,7 +25,7 @@ xcode() {
 alias xcode=xcode
 
 appcode() {
-  open -a /Applications/AppCode\ EAP.app $1
+  open -a /Applications/AppCode.app $1
 }
 
 deckset() {
