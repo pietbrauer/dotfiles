@@ -21,7 +21,7 @@
     up = svn rebase --all
     wtf = !git-wtf
 [core]
-    excludesfile = ~/.gitignore-global
+	excludesfile = /Users/piet.brauer/.gitignore_global
     pager = less -FXRS -x4
     legacyheaders = false
 [diff]
