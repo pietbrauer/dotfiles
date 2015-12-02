@@ -39,17 +39,9 @@ export GOPATH=$HOME/Documents/Projekte/go
 
 export PATH=/usr/local/bin:/usr/local/sbin:/opt/X11/include:$GOPATH/bin:$PATH
 
-export DEVICE_TYPE="iPhone-5s"
-export IOS_SDK_VERSION="8.3"
-export OS="8.3"
-
 alias diff='diff -Nuarbw'
 
 alias be='bundle exec'
-alias rs='be rails server'
-alias rc='be rails console'
-
-alias g='git'
 
 alias ll='ls -l'
 alias ..='cd ..'
