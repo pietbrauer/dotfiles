@@ -45,3 +45,8 @@ alias be='bundle exec'
 
 alias ll='ls -l'
 alias ..='cd ..'
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
