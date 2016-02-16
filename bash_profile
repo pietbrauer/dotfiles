@@ -46,6 +46,8 @@ alias be='bundle exec'
 alias ll='ls -l'
 alias ..='cd ..'
 
+alias gforget='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
+
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
