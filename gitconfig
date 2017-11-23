@@ -25,10 +25,23 @@
     pager = less -FXRS -x4
     legacyheaders = false
 [diff]
+    tool = Kaleidoscope
     rename = copy
     renamelimit = 0
+[difftool]
+    prompt = false
+[difftool "Kaleidoscope"]
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [merge]
-    tool = opendiff
+    tool = Kaleidoscope
+[merge]
+    tool = Kaleidoscope
+    keepBackup = false
+[mergetool]
+    prompt = false
+[mergetool "Kaleidoscope"]
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+    trustExitCode = true
 [format]
     numbered = auto
 [repack]
@@ -56,12 +69,6 @@
     extendedRegexp = true
 [log]
     decorate = short
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [github]
 	user = pietbrauer
 [ghi]

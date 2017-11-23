@@ -43,7 +43,8 @@ alias diff='diff -Nuarbw'
 
 alias be='bundle exec'
 
-alias ll='ls -l'
+alias ls='exa'
+alias ll='exa -l'
 alias ..='cd ..'
 
 alias gforget='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
@@ -53,5 +54,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 export GEM_HOME="$HOME/.gem"
-export PATH=$GEM_HOME/bin:$PATH
+export PATH=$GEM_HOME/bin:/usr/local/anaconda3/bin:$PATH
+export M2=$(brew --prefix maven)/libexec/bin
+export M2_HOME=$(brew --prefix maven)/libexec
+export MONGODB_HOME=$HOME
 
