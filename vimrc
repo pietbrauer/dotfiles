@@ -1,7 +1,5 @@
 set nocompatible
 
-execute pathogen#infect()
-
 filetype plugin indent on
 
 " Enables markdown highlighting with .md extension

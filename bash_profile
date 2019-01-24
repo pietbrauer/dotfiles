@@ -58,4 +58,5 @@ export PATH=$GEM_HOME/bin:/usr/local/anaconda3/bin:$PATH
 export M2=$(brew --prefix maven)/libexec/bin
 export M2_HOME=$(brew --prefix maven)/libexec
 export MONGODB_HOME=$HOME
-
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8

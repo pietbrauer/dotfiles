@@ -21,9 +21,10 @@
     up = svn rebase --all
     wtf = !git-wtf
 [core]
-	excludesfile = /Users/piet.brauer/.gitignore_global
+	excludesfile = /Users/pietbrauer/.gitignore_global
     pager = less -FXRS -x4
     legacyheaders = false
+	autocrlf = input
 [diff]
     tool = Kaleidoscope
     rename = copy
@@ -76,3 +77,10 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[filter "lfs"]
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[universe]
