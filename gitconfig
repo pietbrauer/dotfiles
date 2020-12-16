@@ -84,3 +84,5 @@
 	process = git-lfs filter-process
 	required = true
 [universe]
+[credential]
+	helper = osxkeychain

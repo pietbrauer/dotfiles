@@ -6,6 +6,8 @@ filetype plugin indent on
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd BufNewFile,BufReadPost *.podspec set filetype=ruby
 
+execute pathogen#infect()
+
 set noswapfile
 set backspace=indent,eol,start
 map <c-n> :NERDTreeToggle<CR>
