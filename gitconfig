@@ -72,8 +72,6 @@
     decorate = short
 [github]
 	user = pietbrauer
-[ghi]
-	token = ba6c388d96da8f8b137824bc74816444c84b89a4
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
