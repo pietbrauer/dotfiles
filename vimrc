@@ -6,6 +6,15 @@ filetype plugin indent on
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd BufNewFile,BufReadPost *.podspec set filetype=ruby
 
+au BufNewFile,BufRead Appfile set ft=ruby
+au BufNewFile,BufRead Deliverfile set ft=ruby
+au BufNewFile,BufRead Fastfile set ft=ruby
+au BufNewFile,BufRead Gymfile set ft=ruby
+au BufNewFile,BufRead Matchfile set ft=ruby
+au BufNewFile,BufRead Snapfile set ft=ruby
+au BufNewFile,BufRead Scanfile set ft=ruby
+au BufNewFile,BufRead Podfile set ft=ruby
+
 execute pathogen#infect()
 
 set noswapfile
@@ -14,7 +23,7 @@ map <c-n> :NERDTreeToggle<CR>
 
 set mouse=a
 
-colorscheme industry
+colorscheme molokai
 
 set history=1000
 set gcr=a:blinkon0 " Disable cursor blink
@@ -38,6 +47,8 @@ set visualbell
 
 set autoindent
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+
+set guifont=Fira\ Codei\ Regular:h12
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
