@@ -1,6 +1,4 @@
-export GOPATH=$HOME/Documents/Projekte/go
-
-export PATH=/usr/local/bin:/usr/local/sbin:/opt/X11/include:$GOPATH/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/opt/X11/include:$PATH
 
 alias diff='diff -Nuarbw'
 
@@ -11,6 +9,7 @@ alias ll='exa -l'
 alias ..='cd ..'
 
 alias gforget='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
+alias gitx='git add -i'
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
